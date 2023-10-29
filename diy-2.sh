@@ -1,6 +1,7 @@
 # 此脚本用处是：定制个性化固件
 #*********************************************************************************************
-
+# 修改IP
+sed -i 's/192.168.1.1/192.168.1.111/g' package/base-files/files/bin/config_generate
 
 # 设置默认主题
 sed -i 's/bootstrap/opentomcat/g' ./feeds/luci/collections/luci/Makefile
